@@ -1,3 +1,5 @@
+.idea
+
 # Compiled Lua sources
 luac.out
 
@@ -39,3 +41,8 @@ luac.out
 *.x86_64
 *.hex
 
+/.idea/AdiBags_Shadowlands_Bait.iml
+/.idea/modules.xml
+/.idea/inspectionProfiles/Project_Default.xml
+/.idea/vcs.xml
+/.idea/workspace.xml
