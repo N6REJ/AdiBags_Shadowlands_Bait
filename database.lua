@@ -1,23 +1,32 @@
--- AdiBags_Shadowlands_Crafting - Bait Database
--- Created by N6REJ character is Bearesquishy - dalaran please credit whenever.
--- Source on GitHub: https://github.com/N6REJ/AdiBags_Shadowlands_Crafting
+-- AdiBags_Shadowlands Bait - Database
+-- Created by @project-author@ character is Bearesquishy - dalaran please credit whenever.
+-- Source on GitHub: https://n6rej.github.io
 --
-local ADDON_NAME, ADDON_TABLE, addon = ...
+local addonName, addonTable, addon = ...
 
 -- Create addon table
-N = { }
-ADDON_TABLE.N = N
+local db = { }
 
--- Label to use
-N["FilterTitle"] = "Bait"
+db.name = "Shadowlands Bait"
+db.desc = "Bait found while fishing in shadowlands"
 
--- Database of items
-N["database"] = {
-    -- ID,	--Item name
-    173038,	-- Lose Sole bait
-    173039,	-- Iridescent amberjack bait
-    173040,	-- Silvergill pike bait
-    173041,	-- Pocked Bonefish bait
-    173042,	-- Spinefin piranha bait
-    173043,	-- Elysian thade bait
+-- Filter info
+db.Filters = {
+	["Bait"] = {
+		uiName = "Shadowlands Bait",
+		uiDesc = "Bait found while fishing in Shadowlands",
+		title = "Bait",
+		items = {
+			-- ID,	--Item name
+			[173038] = true,	-- Lose Sole bait
+			[173039] = true,	-- Iridescent amberjack bait
+			[173040] = true,	-- Silvergill pike bait
+			[173041] = true,	-- Pocked Bonefish bait
+			[173042] = true,	-- Spinefin piranha bait
+			[173043] = true,	-- Elysian thade bait
+		},
+	},
 }
+
+-- now that db is populated lets pass it on.
+addonTable.db = db
