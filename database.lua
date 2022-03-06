@@ -24,6 +24,7 @@ db.Filters = {
 			[173041] = true,	-- Pocked Bonefish bait
 			[173042] = true,	-- Spinefin piranha bait
 			[173043] = true,	-- Elysian thade bait
+			[187712] = true -- Precursor Placoderm Bait
 		},
 	},
 }
